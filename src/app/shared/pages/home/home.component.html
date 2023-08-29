@@ -2,8 +2,8 @@
 <main>
     
             <section>
-                <div class="div-loop"  *ngFor="let item of pokemonList; let id = index">
-                    <a [routerLink]="['/detail', item?.id]" *ngIf="pokemonList[id]?.name != ''" >
+                <div class="div-loop"  *ngFor="let item of pokemonList; let id = index;">
+                    <a [routerLink]="['/detail', id+1]" *ngIf="pokemonList[id]?.name != ''" >
                         <div class="text-info">
                             <p><strong> {{item?.name | uppercase}}</strong></p>
                         
