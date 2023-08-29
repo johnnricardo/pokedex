@@ -1,0 +1,23 @@
+<section>
+    <div class="box" *ngIf="pokemonDetails[id]">
+        <div class="top" >
+            <img [src]="pokemonDetails[id-1].url" alt="pokemon-image" class="slideInDown" >
+            <div class="pokemon-name">
+                <h1 class="pokemon-h1-name">{{pokemonDetails[id-1].name | uppercase}}</h1>
+            </div>
+        </div>
+        <div class="estatisticas">
+            <h1 class="power-title">Estatísticas</h1>
+        </div>
+
+        <div class="sta-list" *ngFor="let item of pokemonStats[id]">
+            <ul>{{item?.stat?.name | uppercase}} </ul>
+            <ul class="valor-stat">{{item?.base_stat }}</ul>  
+            
+        </div>
+
+        <div class="voltar">
+            <a routerLink="/">VOLTAR</a>
+        </div>
+    </div>
+</section>

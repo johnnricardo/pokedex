@@ -1,0 +1,21 @@
+
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100px;
+
+}
+
+.pokeball-logo{
+    width: 48px;
+    height: 47px;
+}
+
+.pokedex-logo {
+    width: 124px;
+    height: 25px;
+}

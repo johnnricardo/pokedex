@@ -1,0 +1,28 @@
+*{
+    font-family: monospace;
+    background-color: #51535d;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #262835;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+}
+input {
+    border: none;
+    color: white;
+
+    outline: 0;
+    width: 80%;
+    font-size: 20px;
+}

@@ -1,0 +1,6 @@
+<body>
+    <form>
+        <input #inputValue type="text" [value]="msgValue" (click)="ButtonClicked()" (input)="ButtonChange(inputValue.value)" (blur)="ButtonBlur()">
+        <img src="assets/images/Vector.png" alt="buscar-pokemon">
+    </form>
+</body>

@@ -1,0 +1,25 @@
+<app-barra-pesquisa (ClickEvent)="AddList()" ></app-barra-pesquisa>
+<main>
+    
+            <section >
+                <div class="div-loop"  *ngFor="let item of pokemonList; let id = index">
+                    <a routerLink="/detail/{{item?.id}}" *ngIf="pokemonList[id]?.name != ''" >
+                        <div class="text-info">
+                            <p><strong> {{item?.name | uppercase}}</strong></p>
+                        
+                        <div class="type-info">
+                        <p class="type"> {{item?.types?.typename1}} </p>
+                        <p class="type"> {{item?.types?.typename2}} </p>
+                        </div>
+                        </div>
+            
+                        <div  class="img-div">
+                            <img [src]="item?.url" alt="">
+                        </div>
+                    </a>
+                </div>
+            </section>
+   
+</main>
+
+<br><br><br>
