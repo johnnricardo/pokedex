@@ -1,9 +1,9 @@
 <app-barra-pesquisa (ClickEvent)="AddList()" ></app-barra-pesquisa>
 <main>
     
-            <section>
+            <section *ngIf="pokemonList">
                 <div class="div-loop"  *ngFor="let item of pokemonList; let id = index;">
-                    <a [routerLink]="['/detail', item?.id]" *ngIf="pokemonList[id]?.name != ''" >
+                    <a [routerLink]="['/detail', id]" *ngIf="pokemonList[id]?.name != ''" >
                         <div class="text-info">
                             <p><strong> {{item?.name | uppercase}}</strong></p>
                         
